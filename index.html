@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooster Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar" id="navbar">
+            <a href="#home"><img class="logo" src="/img/rooster-logo.png" alt="Rooster Logo"></a>
+            <div class="center">
+                <a href="#Menupunkt1">Menupunkt #1</a>
+                <a href="#Menupunkt2">Menupunkt #2</a>
+                <a href="#Menupunkt3">Menupunkt #3</a>
+                <a href="#Menupunkt4">Menupunkt #4</a>
+                <a href="#Menupunkt5">Menupunkt #5</a>
+                <button class="black-btn">BOOK ET MØDE</button>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>Making it right entirely in Copenhagen since 1997</h1>
+            <h4>Every product embodies our spirit of family legacy, traditional craftmanship, and a genuine commitment
+                to sustainability</h4>
+            <button>BOOK ET MØDE</button>
+        </section>
+
+        <section>
+            <h2>Pursuit of excellence</h2>
+            <p>The idea of "form follows function," a principle associated with the modernist design movement, was the
+                starting place for our Voda collection. Its classic geometry and clean finishes unite into an industrial
+                modern style, crafted for Australian living.</p>
+            <button>KONTAKT OS</button>
+        </section>
+
+        <section>
+            <h2>Modern refinement</h2>
+            <p>Sammen med vores kunder og den samlede viden fra vores 18.500 arkitekter,
+                ingeniører og øvrige specialister skaber vi løsninger, der adresserer urbanisering,
+                griber digitaliseringens muligheder og gør vores byer og samfund mere bæredygtige.
+                <br><br>
+                Transforming Society Together.
+            </p>
+            <button>SE MERE</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Rooster Assignment. All rights reserved.</p>
+    </footer>
+    <script>
+        function burgerMenu() {
+            var x = document.getElementById("navbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+
+</html>
