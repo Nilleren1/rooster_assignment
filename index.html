@@ -10,55 +10,49 @@
 </head>
 
 <body>
-        <header class="navbar" id="navbar">
-            <a href="#home"><img class="logo" src="/img/rooster-logo.png" alt="Rooster Logo"></a>
-            <div class="center">
-                <a href="#Menupunkt1">Menupunkt #1</a>
-                <a href="#Menupunkt2">Menupunkt #2</a>
-                <a href="#Menupunkt3">Menupunkt #3</a>
-                <a href="#Menupunkt4">Menupunkt #4</a>
-                <a href="#Menupunkt5">Menupunkt #5</a>
-            </div>
-            <button class="black-btn nav-btn">BOOK ET MØDE</button>
-            <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
-                <i class="fa fa-bars" style="font-size:24px"></i>
-            </a>
-        </header>
+    <header class="navbar" id="navbar">
+        <a href="#home" class="logo"><img src="/img/rooster-logo.png" alt="Rooster Logo"></a>
+        <div class="center">
+            <a href="#Menupunkt1">Menupunkt #1</a>
+            <a href="#Menupunkt2">Menupunkt #2</a>
+            <a href="#Menupunkt3">Menupunkt #3</a>
+            <a href="#Menupunkt4">Menupunkt #4</a>
+            <a href="#Menupunkt5">Menupunkt #5</a>
+        </div>
+        <button class="black-btn nav-btn">BOOK ET MØDE</button>
+        <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </header>
     <main>
         <section class="section-bg">
             <div class="section-bg-content">
                 <h1>Making it right entirely in Copenhagen since 1997</h1>
                 <h4>Every product embodies our spirit of family legacy, traditional craftmanship, and a genuine
-                    commitment
-                    to sustainability</h4>
+                    commitment to sustainability</h4>
                 <button class="white-btn">BOOK ET MØDE</button>
             </div>
         </section>
 
-        <section class="section-center p5" style="background-color: #f8dd9f;">
+        <section class="section-center" style="background-color: #f8dd9f;">
             <h2>Pursuit of excellence</h2>
-            <div class="text-area">
+            <div class="text-area" style="max-width: 50%; margin-bottom: 5px;">
                 <p>The idea of "form follows function," a principle associated with the modernist design movement, was
-                    the
-                    starting place for our Voda collection. Its classic geometry and clean finishes unite into an
-                    industrial
-                    modern style, crafted for Australian living.</p>
+                    the starting place for our Voda collection. Its classic geometry and clean finishes unite into an
+                    industrial modern style, crafted for Australian living.</p>
             </div>
             <button style="align-self: center;" class="black-btn">KONTAKT OS</button>
-
         </section>
 
         <section class="hero">
-            <div class="image-side p5">
+            <div class="image-side">
                 <img src="/img/splitsektion-1.jpg" alt="Ocean waves">
             </div>
             <div class="text-side">
                 <h1 style="margin: 0;">Modern refinement</h1>
                 <p>Sammen med vores kunder og den samlede viden fra vores 18.500 arkitekter, ingeniører og øvrige
-                    specialister
-                    skaber vi løsninger, der adresserer urbanisering, griber digitaliseringens muligheder og gør vores
-                    byer og
-                    samfund mere bæredygtige.</p>
+                    specialister skaber vi løsninger, der adresserer urbanisering, griber digitaliseringens muligheder
+                    og gør vores byer og samfund mere bæredygtige.</p>
                 <p style="padding-bottom: 10px;">Transforming Society Together.</p>
                 <button class="black-btn">KONTAKT OS</button>
             </div>
@@ -66,21 +60,59 @@
 
         <section class="three-images">
             <div class="image-card">
-                    <img src="/img/ydelser.jpg" alt="Ydelser">
-                    <div class="overlay-text">Ydelser</div>
+                <img src="/img/ydelser.jpg" alt="Ydelser">
+                <div class="overlay-text">Ydelser</div>
             </div>
             <div class="image-card">
-                    <img src="/img/service.jpg" alt="Service">
-                    <div class="overlay-text">Service</div>
+                <img src="/img/service.jpg" alt="Service">
+                <div class="overlay-text">Service</div>
             </div>
             <div class="image-card">
-                    <img src="/img/kontaktos.jpg" alt="Kontakt os">
-                    <div class="overlay-text">Kontakt os</div>
+                <img src="/img/kontaktos.jpg" alt="Kontakt os">
+                <div class="overlay-text">Kontakt os</div>
             </div>
         </section>
+
+        <section class="hero">
+            <div class="text-side">
+                <h1>Modern refinement</h1>
+                <p>Sammen med vores kunder og den samlede viden fra vores 18.500 arkitekter, ingeniører og øvrige
+                    specialister skaber vi løsninger, der adresserer urbanisering, griber digitaliseringens muligheder
+                    og gør vores byer og samfund mere bæredygtige.</p>
+                <p style="padding-bottom: 10px;">Transforming Society Together.</p>
+                <button class="black-btn">KONTAKT OS</button>
+            </div>
+            <div class="image-side">
+                <img src="/img/splitsektion-2.jpg" alt="Ocean waves">
+            </div>
+        </section>
+
+<section class="contact-section" style="background-color: #f8dd9f;">
+    <div class="row">
+        <div class="column">
+            <div class="contact-info">
+                <h1 style="margin-bottom: 5px;">Get in touch</h1>
+                <h4 class="subtitle">We are awwwards and we are here to serve! <br>How can we help you?</h4>
+            </div>
+            <div style="padding-left: 0;">
+                <p>If you have any questions, please contact us through this form.</p>
+                <p>Please complete the following fields.</p>
+            </div>
+        </div>
+        <div class="column">
+            <form class="contact-form">
+                <input required type="text" placeholder="Dit navn*">
+                <input type="tel" placeholder="Telefonnummer">
+                <input required type="email" placeholder="Din email*">
+                <textarea required placeholder="Eventuel besked*"></textarea>
+                <button type="submit" class="black-btn">KONTAKT OS</button>
+            </form>
+        </div>
+    </div>
+</section>
     </main>
-    <footer>
-        <p>&copy; 2023 Rooster Assignment. All rights reserved.</p>
+    <footer style="background-color: black;">
+        <p style="margin: 0;">&copy; 2023 Rooster Assignment. All rights reserved.</p>
     </footer>
     <script>
         function burgerMenu() {
