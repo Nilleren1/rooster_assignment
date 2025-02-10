@@ -21,7 +21,7 @@ body {
   border-radius: 5px;
   color: #ffffff;
   cursor: pointer;
-  padding: 8px 20px;
+  padding: 10px 20px;
   font-size: x-small;
   max-width: 125px;
 }
@@ -35,6 +35,8 @@ button:hover {
   justify-content: center;
   text-align: center;
 }
+
+
 
 .column {
   flex: 1;
@@ -196,6 +198,7 @@ input {
 
 .navbar .logo img {
   max-width: 80px;
+  
   height: auto;
   flex: 1;
 }
@@ -214,7 +217,6 @@ input {
   color: #000000;
   font-size: 0.8rem;
   padding: 14px 16px;
-  text-align: center;
   text-decoration: none;
 }
 
@@ -238,7 +240,8 @@ input {
   background-color: rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: normal;
+  font-family: 'DM Serif Display', serif;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -255,6 +258,7 @@ input {
 p, ul {
   font-family: 'poppins', sans-serif;
   font-size: 0.7rem;
+  max-width: 600px;
 }
 
 .row {
@@ -295,7 +299,7 @@ p, ul {
   flex-direction: column;
   padding: 20px;
   text-align: center;
-  padding: 50px 0 70px 0;
+  padding: 10% 0;
 }
 
 .social-icons a {
@@ -328,6 +332,7 @@ p, ul {
   font-family: 'DM Serif Display', serif;
   font-size: 2.5rem;
   margin-bottom: 10px;
+  font-weight:300;
 }
 
 .text-side p {
@@ -358,6 +363,18 @@ p, ul {
   color: #ffffff;
 }
 
+.center ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.center li {
+  list-style: none;
+}
+
 @media screen and (max-width: 706px) {
   .navbar {
     display: flex;
@@ -374,7 +391,6 @@ p, ul {
   .navbar.responsive {
     flex-direction: column;
     align-items: flex-start;
-    padding: 0;
   }
 
   .navbar a.icon {
@@ -392,7 +408,6 @@ p, ul {
 
   .navbar.responsive .center a {
     display: block;
-    width: 100%;
     text-align: center;
     padding: 10px 5px;
   }
@@ -400,13 +415,24 @@ p, ul {
   .navbar.responsive .black-btn {
     display: block;
     width: 100%;
-    text-align: left;
     padding: 10px 20px;
     margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
   .navbar a.logo img {
     max-width: 70px;
+    background-color: transparent;
+  }
+
+  #mobilnav {
+    display: flex;
+    justify-content: space-between; width: 100%;
+  }
+
+  .center ul {
+    flex-direction: column;
   }
 }
 
@@ -444,9 +470,14 @@ p, ul {
     height: 50%;
   }
 
-  .overlay-text {
-    font-size: 1.5rem;
-  }
+    .row {
+      flex-direction: column;
+    }
+  
+    .contact-section .column {
+      width: 100%;
+      padding: 5px;
+    }
 
   .footer {
     flex-direction: column;
