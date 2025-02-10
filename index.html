@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rooster Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -12,7 +17,7 @@
 <body>
     <header class="navbar" id="navbar">
         <a href="#home" class="logo"><img src="/img/rooster-logo.png" alt="Rooster Logo"></a>
-        <div class="center">
+        <div class="center menu-option">
             <a href="#Menupunkt1">Menupunkt #1</a>
             <a href="#Menupunkt2">Menupunkt #2</a>
             <a href="#Menupunkt3">Menupunkt #3</a>
@@ -87,32 +92,81 @@
             </div>
         </section>
 
-<section class="contact-section" style="background-color: #f8dd9f;">
-    <div class="row">
-        <div class="column">
-            <div class="contact-info">
-                <h1 style="margin-bottom: 5px;">Get in touch</h1>
-                <h4 class="subtitle">We are awwwards and we are here to serve! <br>How can we help you?</h4>
+        <section class="contact-section" style="background-color: #f8dd9f;">
+            <div class="row">
+                <div class="column">
+                    <div class="contact-info">
+                        <h1 style="margin-bottom: 5px;">Get in touch</h1>
+                        <h4 class="subtitle">We are awwwards and we are here to serve! <br>How can we help you?</h4>
+                    </div>
+                    <div style="padding-left: 0;">
+                        <p>If you have any questions, please contact us through this form.</p>
+                        <p>Please complete the following fields.</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <form class="contact-form">
+                        <input required type="text" placeholder="Dit navn*">
+                        <input type="tel" placeholder="Telefonnummer">
+                        <input required type="email" placeholder="Din email*">
+                        <textarea required placeholder="Eventuel besked*"></textarea>
+                        <button type="submit" class="black-btn">KONTAKT OS</button>
+                    </form>
+                </div>
             </div>
-            <div style="padding-left: 0;">
-                <p>If you have any questions, please contact us through this form.</p>
-                <p>Please complete the following fields.</p>
-            </div>
-        </div>
-        <div class="column">
-            <form class="contact-form">
-                <input required type="text" placeholder="Dit navn*">
-                <input type="tel" placeholder="Telefonnummer">
-                <input required type="email" placeholder="Din email*">
-                <textarea required placeholder="Eventuel besked*"></textarea>
-                <button type="submit" class="black-btn">KONTAKT OS</button>
-            </form>
-        </div>
-    </div>
-</section>
+        </section>
     </main>
-    <footer style="background-color: black;">
-        <p style="margin: 0;">&copy; 2023 Rooster Assignment. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>Find os her</h3>
+            <p>Rooster Fried Chicken</p>
+            <p>Rømersvej 29</p>
+            <p>2500 Frimby</p>
+            <p>+45 12 34 56 78</p>
+            <p style="margin-bottom: 15px;">info@roosterfriedchicken.dk</p>
+            <p>Åbningstider:</p>
+            <p>Mandag - Fredag: 10:00 - 17:30</p>
+            <p style="margin-bottom: 15px;">Lørdag: 10:00 - 15:00</p>
+            <div class="social-icons">
+                <a href="#"><img src="/img/facebook-ikon-hvid.png" alt="Facebook"></a>
+                <a href="#"><img src="/img/instagram-ikon-hvid.png" alt="Instagram"></a>
+                <a href="#"><img src="img/pinterest-ikon-hvid.png" alt="Pinterest"></a>
+                <a href="#"><img src="img/linkedin-ikon-hvid.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Information</h3>
+            <ul>
+                <li><a href="#">Om Rooster</a></li>
+                <li><a href="#">Kataloger & film</a></li>
+                <li><a href="#">Kunde guide</a></li>
+                <li><a href="#">Opskrifter</a></li>
+                <li><a href="#">Presse</a></li>
+                <li><a href="#">Karriere</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>About</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Refund Policy</a></li>
+                <li><a href="#">Help Center</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Shop</h3>
+            <ul>
+                <li><a href="#">Juices</a></li>
+                <li><a href="#">Supplements</a></li>
+                <li><a href="#">Pantry</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Order Ahead</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Refund Policy</a></li>
+            </ul>
+        </div>
     </footer>
     <script>
         function burgerMenu() {
